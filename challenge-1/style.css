@@ -39,7 +39,7 @@
 
 .img-item {
     flex: 1;
-    background : url(/images/image-product-desktop.jpg) no-repeat;
+    background : url(images/image-product-desktop.jpg) no-repeat;
     background-size: cover;
 }
 
@@ -126,7 +126,7 @@ p{
     
     .img-item {
         flex: 1;
-        background : url(/images/image-product-mobile.jpg) no-repeat;
+        background : url(images/image-product-mobile.jpg) no-repeat;
         background-size: cover;
     }
     .desc-item{
