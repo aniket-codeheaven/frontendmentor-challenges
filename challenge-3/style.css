@@ -1,0 +1,141 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@800&display=swap');
+
+:root {
+    --Light-Cyan: hsl(193, 38%, 86%);
+    --Neon-Green: hsl(150, 100%, 66%);
+
+    --Grayish-Blue: hsl(217, 19%, 38%);
+    --Dark-Grayish-Blue: hsl(217, 19%, 24%);
+    --Dark-Blue: hsl(218, 23%, 16%);
+}
+
+html {
+    box-sizing: border-box;
+}
+
+*, *::before, *::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+
+}
+
+#main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: var(--Dark-Blue);
+}
+
+.container {
+    position: relative;
+    width: 33.75rem;
+    background-color: var(--Dark-Grayish-Blue);
+    padding: 3rem;
+    text-align: center;
+    border-radius: 1rem;
+    box-shadow: 0 0 20px 1px hsla(0, 0%, 0%, 0.1);
+}
+
+.container .advice-no {
+    color: var(--Neon-Green);
+    text-transform: uppercase;
+    font-size: .875rem;
+    letter-spacing: .375rem;
+    font-family: 'Manrope', sans-serif;
+}
+
+.container .advice {
+    padding-bottom: 0.5rem;
+}
+
+.container .advice h1 {
+    margin: 1.5rem auto;
+    color: var(--Light-Cyan);
+    font-size: 1.75rem;
+    font-weight: 800;
+    font-family: 'Manrope', sans-serif;
+
+}
+
+.container .line img {
+    width: 100%;
+}
+
+.container .line img.img-mob {
+    display: none;
+}
+
+.container .button-div button {
+    position: absolute;
+    bottom: -2rem;
+    left: 50%;
+    transform: translatex(-50%);
+    z-index: 99;
+    background-color: var(--Neon-Green);
+    border: none;
+    padding: 1.25rem;
+    border-radius: 3rem;
+    height: 4rem;
+    width: 4rem;
+    transition: box-shadow 100ms ease-in-out;
+}
+
+.container .button-div button:hover {
+    box-shadow: 0 0 2rem var(--Neon-Green);
+}
+
+.container .button-div button a {
+    height: 1.5rem;
+    width: 1.5rem;
+}
+
+.rotate {
+    animation: rotateme 1000ms cubic-bezier(0.64, -0.82, 0.49, 2.11) forwards;
+}
+
+@keyframes rotateme {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(270deg);
+    }
+}
+
+@media (max-width: 768px) {
+    .container {
+        width: 70.3125vw;
+    }
+}
+
+@media (max-width: 480px) {
+    #main {
+        padding-top: 7.5rem;
+    }
+
+    .container {
+        width: auto;
+        margin: 0px 1rem;
+        padding: 2.625rem 1.5rem 4rem 1.5rem;
+    }
+
+    .container .line img.img-desk {
+        display: none;
+    }
+
+    .container .line img.img-mob {
+        display: block;
+    }
+
+    .container .advice-no {
+        font-size: 0.715rem;
+    }
+
+    .container .advice h1 {
+        font-size: 1.5rem;
+    }
+
+}
