@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <title>Frontend Mentor | News homepage</title>
+  <!-- fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700;800&display=swap" rel="stylesheet">
+  <!-- css -->
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <!-- navbar -->
+  <header class="header">
+    <div class="wrapper">
+      <nav class="nav" id="main-nav">
+        <div class="header__logo">
+          <a href="#"><img src="assets/images/logo.svg" height="100%" alt="logo"></a>
+        </div>
+        <div class="header__toggle">
+          <button id="togglebtn">
+            <svg id="svg-open" width="40" height="17" xmlns="http://www.w3.org/2000/svg">
+              <g fill="#00001A" fill-rule="evenodd">
+                <path d="M0 0h40v3H0zM0 7h40v3H0zM0 14h40v3H0z" />
+                <path d="M0 0h40v3H0z" />
+              </g>
+            </svg>
+            <svg id="svg-close" width="32" height="31" xmlns="http://www.w3.org/2000/svg">
+              <g fill="#00001A" fill-rule="evenodd">
+                <path d="m2.919.297 28.284 28.284-2.122 2.122L.797 2.419z" />
+                <path d="M.797 28.581 29.081.297l2.122 2.122L2.919 30.703z" />
+              </g>
+            </svg>
+          </button>
+        </div>
+        <div class="overlay" id="nav-overlay"></div>
+        <div class="header__ul" id="header__ul">
+          <ul>
+            <li class="list-item"><a href="#">Home</a></li>
+            <li class="list-item"><a href="#">New</a></li>
+            <li class="list-item"><a href="#">Popular</a></li>
+            <li class="list-item"><a href="#">Trending</a></li>
+            <li class="list-item"><a href="#">Categories</a></li>
+          </ul>
+        </div>
+      </nav>
+    </div>
+  </header>
+  <!-- main-content -->
+  <section id="main" role="main">
+    <div class="wrapper">
+      <div class="hero-section">
+
+        <div class="hero-section__col1">
+          <div class="banner-img">
+            <img id="banner-desk" src="./assets/images/image-web-3-desktop.jpg" width="100%" alt="image-web-3-desktop">
+            <img id="banner-mob" src="./assets/images/image-web-3-mobile.jpg" width="100%" alt="image-web-3-mobile">
+          </div>
+          <div class="banner-rd-more">
+            <div class="left">
+              <h1>The Bright Future of Web 3.0?</h1>
+            </div>
+            <div class="right">
+              <p class="paragraph"> We dive into the next evolution of the web that claims to put the power of the platforms back into the
+                hands of the people. But is it really fulfilling its promise?</p>
+              <a href="#"><button class="btn">Read more</button></a>
+            </div>
+          </div>
+        </div>
+
+        <div class="hero-section__col2">
+          <div class="banner-news">
+            <h2>New</h2>
+            <h4>
+              <a href="#">Hydrogen VS Electric Cars</a>
+            </h4>
+            <p class="paragraph">Will hydrogen-fueled cars ever catch up to EVs?</p>
+            <hr>
+            <h4>
+              <a href="#">The Downsides of AI Artistry</a>
+            </h4>
+            <p class="paragraph">What are the possible adverse effects of on-demand AI image generation?</p>
+            <hr>
+            <h4>
+              <a href="#">Is VC Funding Drying Up?</a>
+            </h4>
+            <p class="paragraph">Private funding by VC firms is down 50% YOY. We take a look at what that means.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="cards-section">
+
+        <div class="card">
+          <div class="card__img">
+            <img src="assets/images/image-retro-pcs.jpg" width="100px" alt="image-retro-pcs">
+          </div>
+          <div class="card__desc">
+            <h3 class="card__no">01</h3>
+            <h5 class="card__title">Reviving Retro PCs</h5>
+            <p class="paragraph">What happens when old PCs are given modern upgrades?</p>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="card__img">
+            <img src="assets/images/image-top-laptops.jpg" width="100px" alt="image-top-laptops">
+          </div>
+          <div class="card__desc">
+            <h3 class="card__no">02</h3>
+            <h5 class="card__title">Top 10 Laptops of 2022</h5>
+            <p class="paragraph">Our best picks for various needs and budgets.</p>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="card__img">
+            <img src="assets/images/image-gaming-growth.jpg" width="100px" alt="image-gaming-growth">
+          </div>
+          <div class="card__desc">
+            <h3 class="card__no">03</h3>
+            <h5 class="card__title">The Growth of Gaming</h5>
+            <p class="paragraph">How the pandemic has sparked fresh opportunities.</p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+  </section>
+
+  <!-- <footer></footer> -->
+</body>
+<!-- js -->
+<script defer src="index.js"></script>
+
+</html>
