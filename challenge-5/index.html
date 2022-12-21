@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Frontend Mentor | Tip calculator app</title>
+  <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+  <header role="heading" class="header">
+    <img src="images/logo.svg" alt="logo">
+  </header>
+  <main class="main">
+    <div class="left">
+      <div class="input-div">
+        <div class="flex-row">
+          <h2 class="left__head">Bill</h2>
+          <span class="left__head red total_bill"></span>
+        </div>
+        <input class="input-txt" type="number" name="total_bill" id="total_bill" placeholder="0">
+        <span class="input-txt-icon">
+          <img src="images/icon-dollar.svg" alt="icon-dollar">
+        </span>
+      </div>
+
+      <div class="flex-row">
+        <h2 class="left__head">Select Tip %</h2>
+        <!-- <span class="red" id=""></span> -->
+      </div>
+      <div class="disc-buttons">
+        <button class="disc-btn tip_percent" value="5">5%</button>
+        <button class="disc-btn tip_percent" value="10">10%</button>
+        <button class="disc-btn tip_percent" value="15">15%</button>
+        <button class="disc-btn tip_percent" value="25">25%</button>
+        <button class="disc-btn tip_percent" value="50">50%</button>
+        <input class="input-txt tip_percent" value="" type="number" name="custom_disc" id="custom_disc" placeholder="Custom">
+      </div>
+
+
+      <div class="input-div">
+        <div class="flex-row">
+          <h2 class="left__head">Number of People</h2>
+          <span class="left__head red total_people"></span>
+        </div>
+        <input class="input-txt" type="number" name="total_people" id="total_people" placeholder="0">
+        <span class="input-txt-icon">
+          <img src="images/icon-person.svg" alt="icon-person">
+        </span>
+      </div>
+
+
+    </div>
+    <div class="right">
+      <div class="result-row tip-amt">
+        <div>
+          <h2>Tip Amount</h2>
+          <p>/ person</p>
+        </div>
+        <div class="price">
+          <h3>$<span id="tip-amt">0.00</span></h3>
+        </div>
+      </div>
+      <div class="result-row total">
+        <div>
+          <h2>Total</h2>
+          <p>/ person</p>
+        </div>
+        <div class="price">
+          <h3>$<span id="total">0.00</span></h3>
+        </div>
+      </div>
+      <div class="result-row reset">
+        <button type="reset" class="btn" id="reset-btn">Reset</button>
+      </div>
+    </div>
+  </main>
+</body>
+<script defer src="script.js"></script>
+</html>
