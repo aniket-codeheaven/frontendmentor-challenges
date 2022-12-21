@@ -37,6 +37,7 @@ header {
 
 header img{
     margin: auto;
+    display: block;
 }
 
 /* .heading__h1 {
