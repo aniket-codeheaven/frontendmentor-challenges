@@ -1,32 +1,88 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
-
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
+
   <title>Frontend Mentor | E-commerce product page</title>
 
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
+  <!-- CSS -->
+  <link rel="stylesheet" href="globals.css">
+  <link rel="stylesheet" href="style.css">
+
+  <!-- FONTS   -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap" rel="stylesheet">
+
+  <!-- <style>
     .attribution { font-size: 11px; text-align: center; }
     .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
+  </style> -->
 </head>
+
 <body>
 
-  Collections
-  Men
-  Women
-  About
-  Contact
+  <header class="wrapper">
+    <nav class="header__nav" id="nav-menu" data-menu-open="false">
+
+      <div class="header__left">
+
+        <div class="header__toggle" id="toggle-open">
+          <img src="images/icon-menu.svg" alt="icon-menu">
+        </div>
+
+        <div class="header__logo flex-cent-cent">
+          <img src="images/logo.svg" alt="logo">
+        </div>
+
+        <div class="overlay"></div>
+        <div class="header__navlist">
+
+          <div class="header__close" id="toggle-close">
+            <img src="images/icon-close.svg" alt="icon-menu">
+          </div>
+
+          <ul class="header__ul">
+            <li class="nav-item"><a class="nav-link" href="#">Collections</a></li>
+            <li class="nav-item"><a class="nav-link" href="#">Men</a></li>
+            <li class="nav-item"><a class="nav-link" href="#">Women</a></li>
+            <li class="nav-item"><a class="nav-link" href="#">About</a></li>
+            <li class="nav-item"><a class="nav-link" href="#">Contact</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="header__right">
+
+        <div class="header__cart flex-cent-cent">
+          <img src="images/icon-cart.svg" alt="icon-cart">
+        </div>
+
+        <div class="header__profile flex-cent-cent">
+          <img src="images/image-avatar.png" alt="image-avatar">
+        </div>
+      </div>
+    </nav>
+    <div class="header__hrd">
+      <hr class="header__hr wrapper">
+    </div>
+  </header>
+
+
+
+
+
+
 
   Sneaker Company
 
   Fall Limited Edition Sneakers
 
-  These low-profile sneakers are your perfect casual wear companion. Featuring a 
+  These low-profile sneakers are your perfect casual wear companion. Featuring a
   durable rubber outer sole, they’ll withstand everything the weather can offer.
 
   $125.00
@@ -35,10 +91,12 @@
 
   0
   Add to cart
-  
+
   <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
     Coded by <a href="#">Your Name Here</a>.
   </div>
 </body>
+<script src="script.js"></script>
+
 </html>
