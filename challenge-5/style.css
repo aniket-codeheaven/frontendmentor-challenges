@@ -35,7 +35,7 @@ header {
     margin: 1.5rem auto;
 }
 
-header img{
+header img {
     margin: auto;
     display: block;
 }
@@ -136,9 +136,10 @@ input[name="total_people"] {
     background-color: var(--very-dark-cyan);
     transition: color 200ms ease-in-out, background-color 200ms ease-in-out;
 }
+
 .disc-btn.active {
     color: var(--very-dark-cyan);
-    background-color:var(--strong-cyan)
+    background-color: var(--strong-cyan)
 }
 
 .disc-btn:hover {
@@ -206,11 +207,11 @@ button.btn:hover {
     background-color: var(--light-grayish-cyan);
 }
 
-.left__head.red{
+.left__head.red {
     color: red;
 }
 
-.flex-row{
+.flex-row {
     display: flex;
     justify-content: space-between;
 }
@@ -218,20 +219,22 @@ button.btn:hover {
 /* Chrome, Safari, Edge, Opera */
 input::-webkit-outer-spin-button,
 input::-webkit-inner-spin-button {
-  -webkit-appearance: none;
-  margin: 0;
+    -webkit-appearance: none;
+    margin: 0;
 }
 
 /* Firefox */
 input[type=number] {
-  -moz-appearance: textfield;
+    appearance: textfield;
+    -moz-appearance: textfield;
 }
 
 @media (min-width : 57.5rem) {
-    header{
+    header {
         margin-top: 6rem;
         margin-bottom: 4rem;
     }
+
     main.main {
         display: grid;
         grid-template-columns: 1fr 1fr;
@@ -239,18 +242,23 @@ input[type=number] {
         max-width: 57.5rem;
         margin: auto;
     }
+
     .left .disc-buttons {
         grid-template-columns: 1fr 1fr 1fr;
     }
+
     .result-row.total {
         margin-top: 0rem;
     }
+
     .result-row.reset {
         margin-top: 7.5rem;
     }
+
     .price h3 {
         font-size: 3rem;
     }
+
     .right {
         padding: 2.5rem;
     }
